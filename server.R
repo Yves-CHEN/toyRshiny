@@ -15,7 +15,7 @@ server <- function(input, output) {
     # Define the function that will process the file
     generate <- function(featureFile) {
         #load RF model
-        load("../17.predictPersistent//model_foldEnrich/RF.model.Mar2023.dat")
+        load("RF.model.Mar2023.dat")
         model = models[["full"]]
         #dat = read_table2(featureFile)
         dat = read.table(featureFile,header =T, as.is =T)
